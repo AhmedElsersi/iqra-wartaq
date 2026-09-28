@@ -149,6 +149,12 @@ header.top {
   text-decoration: none;
 }
 
+a.badge:hover,
+a.badge:focus-visible {
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+
 .badge.disabled {
   opacity: 0.7;
   cursor: default;
@@ -196,6 +202,13 @@ section h2 {
   margin: 0;
   font-size: 14.5px;
   color: var(--ink-dim);
+}
+
+h3.sub {
+  margin: 28px 0 14px;
+  font-size: 17px;
+  color: var(--gold-light);
+  text-align: center;
 }
 
 .features {
