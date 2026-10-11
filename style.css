@@ -180,6 +180,108 @@ a.badge:focus-visible {
   color: var(--gold-light);
 }
 
+/* The Windows download asks which Windows first, so it is a details element
+   rather than a link: closed, a badge beside the two stores; open, a row of
+   its own beneath them with the two architectures in it. No script — a
+   details element opens on a click and on a key by itself. */
+.winpick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.winpick[open] {
+  flex: 1 0 100%;
+}
+
+.winpick > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.winpick > summary::-webkit-details-marker {
+  display: none;
+}
+
+.winpick > summary:hover,
+.winpick > summary:focus-visible {
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+
+.winpick .caret {
+  opacity: 0.7;
+  transition: transform 0.15s ease;
+}
+
+.winpick[open] .caret {
+  transform: rotate(180deg);
+}
+
+.winpick-body {
+  width: 100%;
+  max-width: 460px;
+  text-align: start;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.winpick-ask {
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.winopt {
+  display: block;
+  padding: 12px 14px;
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.winopt + .winopt {
+  margin-top: 10px;
+}
+
+a.winopt:hover,
+a.winopt:focus-visible {
+  border-color: var(--gold);
+}
+
+.winopt strong {
+  display: block;
+  font-size: 15px;
+}
+
+.winopt small {
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.winopt-note {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink-dim);
+}
+
+/* No 32-bit build exists, so that choice is shown and explained rather than
+   hidden: a reader on a 32-bit machine is owed the reason, not a dead link. */
+.winopt.unavailable {
+  opacity: 0.7;
+}
+
+.winpick-hint {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--ink-dim);
+}
+
 section {
   margin-top: 56px;
 }

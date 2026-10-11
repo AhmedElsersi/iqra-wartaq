@@ -60,25 +60,60 @@
         <span data-lang-panel="ar" class="active">حمّله من App Store</span>
         <span data-lang-panel="en">Download on the App Store</span>
       </a>
-      <a class="badge" href="https://github.com/AhmedElsersi/iqra-wartaq/releases/latest/download/iqra-wartaq-windows-x64.zip" download>
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 5.1 10.4 4v7.2H3V5.1Zm0 13.8 7.4 1.1v-7.1H3v6Zm8.2 1.2L21 21.5v-8.6h-9.8v7.2Zm0-16.2v7.3H21V2.5l-9.8 1.4Z"/></svg>
-        <span data-lang-panel="ar" class="active">نزّله لـ Windows <small>(تجريبي)</small></span>
-        <span data-lang-panel="en">Download for Windows <small>(beta)</small></span>
-      </a>
+      <details class="winpick">
+        <summary class="badge">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 5.1 10.4 4v7.2H3V5.1Zm0 13.8 7.4 1.1v-7.1H3v6Zm8.2 1.2L21 21.5v-8.6h-9.8v7.2Zm0-16.2v7.3H21V2.5l-9.8 1.4Z"/></svg>
+          <span data-lang-panel="ar" class="active">نزّله لـ Windows <small>(تجريبي)</small></span>
+          <span data-lang-panel="en">Download for Windows <small>(beta)</small></span>
+          <svg class="caret" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 16.5 4.5 9h15L12 16.5Z"/></svg>
+        </summary>
+
+        <div class="winpick-body">
+          <p class="winpick-ask">
+            <span data-lang-panel="ar" class="active">اختر نوع نظام Windows لديك:</span>
+            <span data-lang-panel="en">Choose your type of Windows:</span>
+          </p>
+
+          <a class="winopt" href="https://github.com/AhmedElsersi/iqra-wartaq/releases/latest/download/iqra-wartaq-windows-x64.zip" download>
+            <strong>
+              <span data-lang-panel="ar" class="active">Windows ‏64 بت <small>(x64)</small></span>
+              <span data-lang-panel="en">Windows 64-bit <small>(x64)</small></span>
+            </strong>
+            <span class="winopt-note">
+              <span data-lang-panel="ar" class="active">ويندوز 10 أو أحدث — وهذا ما تعمل به جميع الأجهزة الحديثة: Intel و AMD، وأجهزة Windows بمعالج Arm كذلك. ملف مضغوط لا يحتاج إلى تثبيت: فُكّ ضغطه كاملًا ثم شغّل mirqat.exe. بداخله ملف «طريقة التشغيل» بالعربية.</span>
+              <span data-lang-panel="en">Windows 10 or newer — what every recent machine runs: Intel, AMD, and Windows on Arm too. A zip, nothing installed: extract the whole folder and run mirqat.exe. A "How to run" file is inside it.</span>
+            </span>
+          </a>
+
+          <div class="winopt unavailable">
+            <strong>
+              <span data-lang-panel="ar" class="active">Windows ‏32 بت <small>(x86)</small> — غير متاحة</span>
+              <span data-lang-panel="en">Windows 32-bit <small>(x86)</small> — not available</span>
+            </strong>
+            <span class="winopt-note">
+              <span data-lang-panel="ar" class="active">لا توجد نسخة 32 بت من التطبيق، وليست مؤجّلة: إطار العمل الذي بُني به التطبيق لا يُنتج ملفات 32 بت لنظام Windows أصلًا. التطبيق يحتاج إلى Windows ‏64 بت.</span>
+              <span data-lang-panel="en">There is no 32-bit build, and it is not merely pending: the framework this app is built with produces no 32-bit Windows binaries at all. The app needs 64-bit Windows.</span>
+            </span>
+          </div>
+
+          <p class="winpick-hint">
+            <span data-lang-panel="ar" class="active">كيف أعرف نوع نظامي؟ الإعدادات ← النظام ← حول ← نوع النظام.</span>
+            <span data-lang-panel="en">Not sure which you have? Settings → System → About → System type.</span>
+          </p>
+        </div>
+      </details>
     </div>
 
     <div class="downloads-note">
       <p data-lang-panel="ar" class="active">
-        نسخة Windows تجريبية، ٦٤ بت (x64)، بتصميم يتبع نظام Windows. تعمل على
-        أجهزة Intel و AMD، وعلى أجهزة Windows بمعالج Arm عبر المحاكاة. لا توجد
-        نسخة ٣٢ بت. فُكّ الضغط وشغّل الملف — لا تثبيت ولا متجر.
+        نسخة Windows تجريبية بتصميم يتبع نظام Windows — لا تثبيت ولا متجر،
+        وتفاصيل النسخ في زر التنزيل أعلاه.
         <a href="https://github.com/AhmedElsersi/iqra-wartaq/releases/latest" target="_blank" rel="noopener">كل الإصدارات ومجموع التحقق</a>
       </p>
       <p data-lang-panel="en">
-        The Windows build is a beta, 64-bit (x64), with a look that follows
-        Windows. It runs on Intel and AMD machines, and on Windows on Arm
-        under emulation. There is no 32-bit build. Unzip it and run it —
-        nothing is installed and no store is involved.
+        The Windows build is a beta, with a look that follows Windows —
+        nothing installed and no store involved. Which build to take is in
+        the download button above.
         <a href="https://github.com/AhmedElsersi/iqra-wartaq/releases/latest" target="_blank" rel="noopener">All releases and checksums</a>
       </p>
     </div>
