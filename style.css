@@ -270,12 +270,6 @@ a.winopt:focus-visible {
   color: var(--ink-dim);
 }
 
-/* No 32-bit build exists, so that choice is shown and explained rather than
-   hidden: a reader on a 32-bit machine is owed the reason, not a dead link. */
-.winopt.unavailable {
-  opacity: 0.7;
-}
-
 .winpick-hint {
   margin: 12px 0 0;
   font-size: 13px;
